@@ -1,0 +1,45 @@
+{
+    "name": "N26",
+    "description": "The simplest way to bank, made for the US. Sign up now to get early access.",
+    "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/28178-next-n26-com.jpg",
+    "tags": [
+        "api not found",
+        "financial services",
+        "have api"
+    ],
+    "created": "2019-12-19",
+    "modified": "2019-12-19",
+    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/n26\/master\/apis.json",
+    "specificationVersion": "0.14",
+    "apis": [
+        {
+            "name": "N26",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/28178-next-n26-com.jpg",
+            "humanURL": "https:\/\/next.n26.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/n26-openapi.json"
+                }
+            ]
+        }
+    ],
+    "include": [],
+    "x-common": [
+        {
+            "type": "Crunchbase",
+            "url": "https:\/\/crunchbase.com\/organization\/number26"
+        },
+        {
+            "type": "Twitter",
+            "url": "https:\/\/twitter.com\/N26USA"
+        },
+        {
+            "type": "Website",
+            "url": "https:\/\/next.n26.com"
+        }
+    ]
+}
