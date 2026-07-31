@@ -1,0 +1,19 @@
+generated: '2026-07-20'
+method: searched
+source: live probes of /.well-known/ on n26.com
+host: https://n26.com
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+notes: >-
+  N26 is a consumer neobank with no public developer API surface. No /.well-known/
+  discovery documents are published on n26.com (all probed paths return 404), and
+  api.n26.com does not resolve publicly. Recorded as valid negative discovery data.

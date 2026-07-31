@@ -1,8 +1,27 @@
 aid: n26
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/n26.png
 name: N26
-description: 'N26 is a company surfaced as a portfolio company of earlybird, insight-partners and added
-  to the API Evangelist network as a stub for enrichment. Sector: fintech. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: >-
+  N26 is a European mobile-first neobank founded in 2013 and headquartered in
+  Berlin, Germany, offering fully digital current accounts, debit and virtual
+  cards, spending analytics, sub-accounts (Spaces), overdraft, savings, and
+  investment products across the EU, delivered through iOS and Android apps and
+  a web banking interface. Surfaced as a portfolio company of Earlybird and
+  Insight Partners in the fintech sector. As of this enrichment pass, N26 is a
+  consumer bank that publishes no public developer API, developer portal, SDKs,
+  or /.well-known/ discovery surface; its integrations are handled through
+  private business partnerships rather than self-service API access.
 url: https://raw.githubusercontent.com/api-evangelist/n26/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,10 +32,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Fintech
+- Banking
+- Neobank
+- Digital Banking
+- Payments
+- Europe
+- Consumer Finance
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,5 +49,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/n26-domain-security.yml
 - type: Website
   url: https://n26.com/en-us/
+- type: Support
+  url: https://support.n26.com/en-de
+- type: Blog
+  url: https://n26.com/en-de/blog
+- type: TermsOfService
+  url: https://n26.com/en-de/legal-documents
+- type: PrivacyPolicy
+  url: https://docs.n26.com/legal/01+DE/03+Privacy+Policy/en/01privacy-policy-en.pdf
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v1
