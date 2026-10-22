@@ -1,5 +1,5 @@
 generated: '2026-10-12'
-method: none
+method: searched
 source:
 - https://zapier.com/apps/n26/integrations
 - https://n8n.io/integrations/n26/
@@ -10,7 +10,44 @@ checked:
 - https://monid.ai/tools/n26
 - https://n8n.io/integrations/n26/
 - https://zapier.com/apps/n26/integrations
+- https://portal.mvp.bafin.de/database/InstInfo/
+- https://www.dnb.nl/en/public-register/
+- https://www.finma.ch/en/finma-public/authorised-institutions-individuals-and-products/
 summary: null
 marketplace_apps: []
-edges: []
+edges:
+- partner_name: BaFin company database (supervised institutions, Germany)
+  partner: null
+  partner_match: register
+  type: register
+  channel: regulator-register
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://portal.mvp.bafin.de/database/InstInfo/
+  category: German financial supervisory licence (BaFin)
+  contract_reference:
+    register: BaFin company database (supervised institutions, Germany)
+    spec_file: null
+    standard: null
+    role: licensed-participant
+    registrations:
+    - registered_name: N26 Bank SE
+      licences:
+      - CRR-Kreditinstitut
+      - Kreditinstitut
+      - Kryptowertedienstleister
+      - SSM-Institut
+      register_country: DE
+      matched_domain: n26.com
+      matched_by: domain+name-among-holders
+      register_id: BaFin-ID 10145827
+      lei: 529900JB9XYZ8E87N345
+      identity: wikidata Q27479372 (LEI P1278) P856 https://n26.com/fr-fr
+    signal_note: 'participation only: a supervisory licence / authorisation; no API conformance is published by
+      this register'
+    detected_by: sweep-dach-financial-registers.py
+    detected: '2026-10-21'
+    identity_source: wikidata P856 (LEI P1278 or name; labelled provenance step; Kin 2026-10-15 decision 1)
+  detected_by: sweep-dach-financial-registers.py
+  first_seen: '2026-10-21'
 templates: []
